@@ -43,7 +43,9 @@ extracted_rows, remaining_rows = extract_tables_from_csv(file_path)
 
 print(extracted_rows)  # Rows with > 70% non-null values
 print(remaining_rows)  # Rows with <= 70% non-null values
-Function Parameters
+
+**Function Parameters**
+
 file_path (str): The path to the CSV file you want to process.
 Output
 rows_to_extract: A DataFrame containing the extracted rows that have more than 70% non-null values. These rows are cleaned and have package type keywords identified.
@@ -51,7 +53,7 @@ remaining_rows: A DataFrame containing rows that do not meet the >70% non-null v
 remaining_rows ia used for header Level information
 This script processes a CSV file containing import data and extracts key information such as consignor details, consignee details, VAT numbers, package types, and total amounts. The extracted data is formatted into JSON for easy storage and access.
 
-**Features**
+**Remaining _rows we extract the header level information**
 Extracts consignor and consignee details including names, addresses, EORI numbers, and VAT numbers.
 Identifies package types from the CSV data.
 Processes gross weight and pallet details.
@@ -62,8 +64,6 @@ Usage
 **Setup:**
 
 
-Ensure you have Python installed on your system.
-Install the required Python packages (pandas and re).
 Script Requirements:
 
 A CSV file with the required format (must include fields like "Invoice Number", "Consignor Name", "Consignee Name", etc.).
