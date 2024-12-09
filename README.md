@@ -3,6 +3,7 @@ This Python script processes a CSV file, extracts specific rows that contain mor
 The script can be used for processing and extracting meaningful data from large CSV files.
 
 **Requirements**
+
 Python 3.x
 pandas library
 warnings library (standard in Python)
@@ -14,6 +15,7 @@ extract_tables_from_csv(file_path)
 This function processes a CSV file located at file_path. It performs the following tasks:
 
 **Load CSV: Reads the CSV into a pandas DataFrame.**
+
 Extract Rows with > 70% Non-Null Values: Filters rows where the percentage of non-null values is greater than 70%.
 Set Headers: Sets the first row of the extracted rows as the header and renames columns.
 Handle Duplicated Column Names: Ensures unique column names by appending a suffix to duplicate column names.
@@ -30,12 +32,15 @@ import pandas as pd
 from your_script_name import extract_tables_from_csv
 
 **replace the file path**
+
 file_path = '/path/to/your/file.csv'
 
 **call the function**
+
 extracted_rows, remaining_rows = extract_tables_from_csv(file_path)
 
 **print the result**
+
 print(extracted_rows)  # Rows with > 70% non-null values
 print(remaining_rows)  # Rows with <= 70% non-null values
 Function Parameters
@@ -54,6 +59,7 @@ Extracts invoice numbers and total amounts.
 Converts the extracted data into JSON format for easy integration into other systems.
 Usage
 **Setup:**
+
 
 Ensure you have Python installed on your system.
 Install the required Python packages (pandas and re).
@@ -78,7 +84,9 @@ Invoice Numbers and Total Amounts:
 Extracts invoice numbers and their corresponding amounts from the data.
 **Export to JSON:**
 
+
 The script converts the extracted data into a structured JSON format for easy storage.
 **Dependencies**
+
 pandas (for data manipulation)
 re (for regular expression matching)
