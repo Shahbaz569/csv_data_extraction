@@ -58,6 +58,7 @@ Processes gross weight and pallet details.
 Extracts invoice numbers and total amounts.
 Converts the extracted data into JSON format for easy integration into other systems.
 Usage
+
 **Setup:**
 
 
@@ -82,10 +83,12 @@ Identifies and categorizes package types (e.g., "CTNS", "QTN", "Pellate").
 Invoice Numbers and Total Amounts:
 
 Extracts invoice numbers and their corresponding amounts from the data.
+
 **Export to JSON:**
 
 
 The script converts the extracted data into a structured JSON format for easy storage.
+
 **Dependencies**
 
 pandas (for data manipulation)
